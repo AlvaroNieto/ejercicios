@@ -1,0 +1,222 @@
+#container {
+    width: 625px;
+    height: 425px;
+    margin-left: 300px;
+    background-color: white;
+}
+#top {
+    height: 80px;
+}
+#logo {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#logodiv {
+    float: left;
+}
+#telefono {
+    height: 40px;
+    float: right;
+    margin-right: 230px;
+}
+#telefono h3{
+    text-align: right;
+    font-size: 90%;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 35px;
+}
+#telefono p{
+    text-align: right;
+    font-size: 55%;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+#bonus {
+    font-size: 55%; 
+    float: right;
+    margin-top: -40px;
+    margin-right: -200px;
+    font-family: sans-serif;
+    letter-spacing: -0.3px;
+}
+
+#contact {
+    margin-right: 5px;
+}
+#buttons {
+    float: right;
+    margin-top: -10px;
+}
+#try {
+    border-radius: 4px;
+    background-color: #86C500;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 8px;
+    transition: all 0.5s;
+    cursor: pointer;
+    letter-spacing: -0.8px;
+}
+
+#login {
+    border-radius: 4px;
+    background-color: #888888;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 8px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#m1 ul {
+    overflow-y: auto;
+    padding: 0px;
+}
+#menu1t {
+    border-right: solid 1px #0E7BDB;
+    background-color: #0166BE;
+}
+#menu2t {
+    border-right: solid 1px #0E7BDB;
+}
+#menu3t {
+    border-right: solid 1px #0E7BDB;
+}
+#menu4t {
+    border-right: solid 1px #0E7BDB;
+}
+#menu5t {
+    border-right: solid 1px #0E7BDB;
+}
+#menu6t {
+    font-weight: none;
+    font-size: 0.5em;
+    padding-left: 50px !important;
+    height: 12px;
+    border-right: solid 1px #0E7BDB;
+}
+#menu7t {
+    font-weight: none;
+    font-size: 0.5em;
+    height: 12px;
+    border-right: solid 1px #0E7BDB;
+}
+#menu8t {
+    font-weight: none;
+    font-size: 0.5em;
+    height: 12px;
+    border-right: solid 1px #0E7BDB;
+}
+#menu9t {
+    font-weight: none;
+    font-size: 0.5em;
+    height: 12px;
+    border-right: solid 1px #0E7BDB;
+}
+#menu10t {
+    font-weight: none;
+    font-size: 0.5em;
+    height: 12px;
+    border-right: solid 1px #0E7BDB;
+    border-left: solid 1px #0E7BDB;
+}
+ li {
+    font-weight: bold;
+    border-top: solid 1px #0E7BDB;
+    border-bottom: solid 1px #0E7BDB;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.6em;
+    padding: 8.5px;
+    order-radius: 4px;
+    display: inline;  
+    float:left;   
+    background-color: #0282E5;
+    font-family: sans-serif;
+    overflow-y: auto;
+}
+#body {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 318px;
+    background-color: #1984E2;
+}
+#b1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    padding-left: 25px;
+    padding-top: 20px;
+    letter-spacing: -0.1px;
+}
+
+#b2 {    
+    font-weight: bold;
+    text-align: left;
+    font-size: 0.8em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+#datos1 {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 60px;
+    margin-top: 25px;
+    margin-left: 20px;
+    color: #575757;
+    font-size: 0.7em;
+    font-family: sans-serif;
+}
+#datos2 {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 60px;
+    margin-top: 5px;
+    margin-left: 20px;
+    color: #575757;
+    font-size: 0.7em;
+    font-family: sans-serif;
+}
+#send {
+    border-radius: 1px;
+    background-color: #86C500;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 8px;
+    transition: all 0.5s;
+    cursor: pointer;
+    letter-spacing: -0.8px;
+    margin-left: 21px;
+    margin-top: 5px;
+}
+#foto {
+    float:right;
+    overflow-y: auto;
+    margin-top: -260px;
+    margin-right: 20px;
+}
+#imagendatos {
+    font-weight: cursive;
+    float: right;
+    font-size: 0.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    margin-top: -155px;
+    margin-right: 210px;
+}
+
+

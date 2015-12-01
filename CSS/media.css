@@ -1,0 +1,28 @@
+dl {
+    float: left;
+}
+
+ul{
+    padding-left: 250px;
+    width: 720px;
+}
+
+@media screen and (max-width:700px) {
+    dl {
+        float:none;
+        width: 128px;
+    }
+    button {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (min-width:701px) {
+    dl {
+        background-color: blue;
+        float: left;
+    }
+    button {
+        font-family: 'Oswald', sans-serif;
+    }
+}
