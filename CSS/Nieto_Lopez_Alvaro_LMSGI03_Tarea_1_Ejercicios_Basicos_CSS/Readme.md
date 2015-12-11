@@ -1,6 +1,6 @@
 #Ejercicio 1:
 
-##a.- Crea una carpeta llamada 'ejercicio1-css'
+a.- Crea una carpeta llamada 'ejercicio1-css'
 
 b.- Descarga y extrae el fichero indicado anteriormente
 
