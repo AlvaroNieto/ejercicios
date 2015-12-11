@@ -1,0 +1,238 @@
+#Container {
+    border-bottom: 3px solid black;
+    width: 850px;
+    margin-left: 250px;
+}
+#top {
+    width: 762px;
+}
+#Centum {
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.7em;
+    border-right: 1px solid black;  
+}
+#top1 {
+    font-family: sans-serif;
+    color: dimgrey;
+}
+#Centum-div {
+    float: left;
+    padding: 2px;
+    border: 1px;    
+}
+#Contacto {
+    overflow-y: auto;
+    padding: 0px;
+    margin-top: -15px;
+    font-family: sans-serif;
+    font-size: 0.8em;
+}
+#Contacto li {
+    float: right;
+    padding: 0px;
+    margin-top: 40px;
+}
+#topimagen1 {    
+    float:left;
+    margin-right: 10px;  
+    margin-left: 9px;
+}
+#topimagen2 {    
+    float: left;
+    margin-right: 10px;     
+}
+
+#topi1p {
+    margin: 0px;
+    float: right;
+}
+#topi1 {
+   border-left: 1px solid black; 
+    margin-left: 10px;
+}
+#topi2p {
+    margin: 0px;
+    float: right
+}
+
+#menulist {
+    clear: left;
+    font-family: sans-serif;
+}
+#menu p {
+    color: white;
+    font-size: 0.9em;
+    padding: 13px;
+    border-right: 1px solid white;
+}
+#menulist li {    
+    display: inline;
+}
+
+#menulist li:hover {
+    background-color: skyblue;
+}
+#menulist a {    
+    overflow-y: auto;
+}
+#m0 {
+    float:left;
+    background-color: darkturquoise;
+    margin-left: -40px;
+}
+#m1 {
+    float:left;
+    background-color: darkslategray;
+}
+
+#m2 {
+    float:left;
+    background-color: darkslategray;
+}
+#m3 {
+    float:left;
+    background-color: darkslategray;
+}
+#m4 {
+    float:left;
+    background-color: darkslategray;
+}
+#m4 {
+    float:left;
+    background-color: darkslategray;
+}
+#m5 {
+    float:left;
+    background-color: darkslategray;
+}
+#m6 {
+    float:left;
+    background-color: darkslategray;
+    padding: 11px;
+}
+#m6 input{
+    width: 240px;
+    background-color: darkslategray;
+    color: white;
+    border: 0px;
+}
+#menulist p {
+    margin: 0px;
+}
+#body1 {
+    width: 762px;
+}
+#bodyimage {
+    width: 762px;
+    float: left;
+}
+#bodyimage1 {
+    padding: 15px;
+    overflow-y: auto;
+    font-size: 75%;
+    float: left;
+    font-family: sans-serif;
+    margin-top: -200px;
+    margin-left: 30px;
+    color: white;
+    width: 300px;
+    background-color: dimgrey;
+    opacity: 0.86;
+}
+
+#adelante {
+    overflow-y: auto;
+    font-size: 120%;
+    float: left;
+    font-family: sans-serif;
+    margin-top: -77px;
+    margin-left: 690px;
+    color: white;
+    width: 20px;
+    background-color: dimgrey;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0.86;
+}
+#adelante p {
+    color: white;
+    float: left;
+    margin: 7px;
+    opacity: 0.86;
+}
+#atras {
+    overflow-y: auto;
+    font-size: 120%;
+    float: left;
+    font-family: sans-serif;
+    margin-top: -77px;
+    margin-left: 650px;
+    color: white;
+    width: 20px;
+    background-color: dimgrey;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0.9;
+
+}
+#atras p {
+    color: white;
+    float: left;
+    margin-left: 5px;
+    margin: 7px;
+}
+#body2s {
+    width: 240px;
+    text-align:justify;
+    margin-left: 0px;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    float: left;
+}
+#body3s {
+    width: 240px;
+    text-align:justify;
+    margin-left: 15px;
+    font-family: sans-serif;
+    font-size: 0.70em;
+    float: left
+}
+#body4s {
+    width: 240px;
+    text-align:justify;
+    margin-right: 100px;
+    font-family: sans-serif;
+    font-size: 0.70em;
+    float: right;
+}
+#body4simg {
+    float:left;
+    padding-bottom: 70px;
+    padding-top: 10px;
+    margin-right: 10px;
+    width: 40px;
+}
+#body3simg {
+    float:left;
+    padding-bottom: 70px;
+    padding-top: 10px;
+    margin-right: 10px;
+    width: 40px;
+}
+#body2simg {
+    float:left;
+    padding-bottom: 70px;
+    padding-top: 10px;
+    margin-right: 10px;
+    width: 40px;
+}
+#bottom {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    width: 100px;
+}
