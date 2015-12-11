@@ -1,0 +1,1 @@
+Using CSS and HTML try to create an HTML page and its layout as similar as possible to the following image:
