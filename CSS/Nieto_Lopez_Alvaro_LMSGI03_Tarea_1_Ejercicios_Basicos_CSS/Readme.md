@@ -1,4 +1,4 @@
-Ejercicio 1:
+#Ejercicio 1:
 
 a.- Crea una carpeta llamada 'ejercicio1-css'
 
@@ -29,7 +29,7 @@ Describe los elementos de la hoja de estilos. Para ello utiliza los apuntes o cu
 
 
 
-Ejercicio 2:
+#Ejercicio 2:
 
 En la versión inglesa, ¿por qué los últimos 5 párrafos se muestran de forma diferente que los 2 primeros?
 
@@ -40,7 +40,7 @@ a.- Edita el fichero poema.html para que los últimos 5 párrafos tengan el mismo 
 
 
 
-Ejercicio 3:
+#Ejercicio 3:
 
 a.- Abre el fichero estilos.css y cambia la linea:body {background-color: tan} por esta otra: body {background-color: aqua}
 
@@ -49,7 +49,7 @@ b.- Guarda los cambios y visualiza el resultado en ambos idiomas. Captura un pan
 c.- Experimenta cambiando otros atributos de color en el fichero CSS. Por ejemplo, cambia los atributos de color para todos los enlaces. (lista de colores: black, gray, silver, white, navy, blue, aqua, teal, marron, red, purple, fuschia, green, lime, yellow, olive). Captura un pantallazo y añádelo al documento a entregar.
 
 
-Ejercicio 4:
+#Ejercicio 4:
 
 
 a.- Encuentra la línea /*DIVS */ en el fichero estilos.css e inserta debajo la siguiente linea:div.reference {color:slategray; margin-left: 40px;}
@@ -59,20 +59,20 @@ b.- Inserta una regla apropiada debajo de la linea /* Paragraphs */ para cambiar
 c.- Inserta una regla css bajo la línea/* Headers */ para cambiar el color de las cabeceras 'h2'.
 
 
-Ejercicio 5:
+#Ejercicio 5:
 
 a.- Modifica la altura de la línea horizontal a 10px.
 
 
 
-Ejercicio 6:
+#Ejercicio 6:
 
 a.- Modifica los estilos para el elemento body para insertar como fondo de la página entera la imagen jabber.2.gif. Debe insertarse centrado verticalmente y a la derecha horizontalmente.
 
 b.- Utilizando márgenes, asegúrate que los diferentes elementos (hr, por ejemplo) no se superpongan encima de la imagen. (debes averiguar el tamaño de la imagen para ello)
 
 
-Ejercicio 7:
+#Ejercicio 7:
 
 a.- Edita el selector h1 para que quede de la siguiente manera:h1 {color:maroon;font-size:20pt;padding: 10px 10px 10px 10px; /* top-right-bottom-left */background-color: white;border-style: groove double;border-color: blue;border-width: 10px;}
 
