@@ -1,0 +1,1 @@
+Se deben entregar un documento que se llame tablas.html y todas las imágenes usadas. Recordar que debéis usar rutas locales para que funcione sin problemas en otros equipos.

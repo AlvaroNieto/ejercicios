@@ -1,0 +1,20 @@
+body {width: 670px;}
+
+h1 {color:#7A7A7A;}
+strong.red {color:red;}
+span.destacado {color:orange;}
+
+h2 {color:blue;}
+a.segundo {color:red;}
+em.tercero {color:blue;}
+
+caption {color:blue;}
+th.especial {color:orange;}
+th {color:red;}
+strong {color:orange;}
+td {color:brown;}
+
+p.cuarto {color:green;}
+span.especial {color:#828282;}
+span.quinto {color:#FF57FF;}
+a.last {color:#32694A;}

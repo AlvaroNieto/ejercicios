@@ -1,0 +1,7 @@
+body {font-family:Sans-serif;}
+div {color:#0084B0;}
+div.normal {color:#525252;}
+a {color:red;}
+em {font-style: normal; background-color: #FFFFCC;}
+span {font-weight: bold;}
+em.especial {background-color:#FFCA6E; border-style: solid; border-width: 1px; border-color: red;}

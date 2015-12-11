@@ -1,0 +1,1 @@
+A partir del código HTML , añadir los estilos necesario para obtener el resultado mostrado más abajo. El archivo html y el archivo css deben meterse en una carpeta que se llame Ej1.
