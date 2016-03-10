@@ -33,32 +33,29 @@
   <script>
     $(document).ready(function() {
       var calc = 0
-
+      var x;
+      var y;
       function valores() {
-        var x = parseInt($("#x").val());
-        var y = parseInt($("#y").val());
+        x = parseInt($("#x").val());
+        y = parseInt($("#y").val());
       };
       $("#suma").click(function() {
-        var x = parseInt($("#x").val());
-        var y = parseInt($("#y").val());
+        valores();
         cal = x + y
         $("#calculadora").text("X + Y = " + cal);
       });
       $("#resta").click(function(event) {
-        var x = parseInt($("#x").val());
-        var y = parseInt($("#y").val());
+        valores();
         cal = x - y
         $("#calculadora").text("X - Y = " + cal);
       });
       $("#multi").click(function(event) {
-        var x = parseInt($("#x").val());
-        var y = parseInt($("#y").val());
+        valores();
         cal = x * y
         $("#calculadora").text("X · Y = " + cal);
       });
       $("#division").click(function(event) {
-        var x = parseInt($("#x").val());
-        var y = parseInt($("#y").val());
+        valores();
         cal = x / y
         $("#calculadora").text("X : Y = " + cal);
       });
