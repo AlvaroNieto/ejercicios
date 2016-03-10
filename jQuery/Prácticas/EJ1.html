@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="EJ1.css">
+  </head>
+  <body>
+    <div id="container">
+      <p id="dentro" class="boton">
+      >>
+      </p>
+      <div id="menu">
+        <p id="fuera" class="boton">
+        <<
+        </p>
+        <img src="img.gif" width="150px;" id="imagen">
+        <p class="menup">
+
+        </p>
+        <p class="menup">
+
+        </p>
+        <p class="menup">
+
+        </p>
+    </div>
+  </div>
+    <script>
+
+      $("#menu").css({
+      "background-color":"grey",
+      "color":"white",
+      "width":"150",
+      "padding":"20px",
+      "border":"2px solid",
+      "border-top-right-radius":"25px",
+      "border-bottom-right-radius":"25px",
+    });
+      $(".menup").css({
+      "border":"2px solid",
+      "border-radius":"25px",
+      "padding":"5px",
+    });
+      $(".boton").css({"border":"2px solid",
+      "border-radius":"25px",
+      "width":"27px"
+    });
+      $( "#fuera" ).click(function() {
+      $( "#menu" ).animate({
+        opacity: 0.25,
+        left:"-200px",
+      })
+      $("#dentro").animate({
+        opacity: 1,
+      })
+      });
+
+      $( "#dentro" ).click(function() {
+      $( "#menu" ).animate({
+        opacity: 1,
+        left:"0px",
+      })
+      $("#dentro").animate({
+        opacity: 0,
+      })
+      });
+</script>
+  </body>
+</html>

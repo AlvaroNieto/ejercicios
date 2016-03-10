@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-1.11.3.js"></script>
+    <title>Jquery</title>
+</head>
+
+<body>
+    <h1>
+    Wololo
+    </h1>
+    <table border="1">
+        <tr id="top">
+            <th></th>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miercoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+            <th></th>
+        </tr>
+        <tr>
+            <td>8:15<br>-<br>9:15</td>
+            <td rowspan="3">Gestión de<br>base de datos</td>
+            <td rowspan="2">Lenguaje<br>de marcas</td>
+            <td rowspan="3">Sistemas<br>Operativos</td>
+            <td rowspan="2">Lenguaje<br>de marcas</td>
+            <td rowspan="2">Sistemas<br>Operativos</td>
+            <td>8:15<br>-<br>9:15</td>
+        </tr>
+        <tr>
+            <td>9:15<br>-<br>10:15</td>
+            <td>9:15<br>-<br>10:15</td>
+            
+        </tr>
+        <tr>
+            <td>10:15<br>-<br>11:15</td>
+            <td rowspan="2">Descanso</td>
+            <td rowspan="2">Descanso</td>
+            <td>Fundamentos<br>de hardware</td>
+            <td>10:15<br>-<br>11:15</td
+        </tr>
+        <tr>
+            <td>11:15<br>-<br>11:45</td>
+            <td>Descanso</td>
+            <td>Descanso</td>
+            <td>Descanso</td>
+            <td>11:15<br>-<br>11:45</td>
+        </tr>
+        <tr>
+            <td>11:45<br>-<br>12:45</td>
+            <td rowspan="3">Planificación<br>de redes</td>
+            <td rowspan="3">Sistemas<br>Operativos</td>
+            <td rowspan="3">Gestión de<br>base de datos</td>
+            <td rowspan="3">Planificación<br>de redes</td>
+            <td rowspan="2">Fundamentos<br>de hardware</td>
+            <td>11:45<br>-<br>12:45</td>
+        </tr>
+        <tr>
+            <td>12:15<br>-<br>13:45</td>
+            <td>12:15<br>-<br>13:45</td>
+        </tr>
+        <tr>
+            <td>13:15<br>-<br>14:45</td>
+            <td>Libre</td>
+            <td>13:15<br>-<br>14:45</td>
+        </tr>
+    </table>
+    <table id="tabla2" border="1">
+        <tr><td>1</td></tr>
+        <tr><td>2</td></tr>
+        <tr><td>3</td></tr>
+        <tr><td>4</td></tr>
+        <tr><td>5</td></tr>
+        <tr><td>6</td></tr>
+        <tr><td>7</td></tr>
+        <tr><td>8</td></tr>
+        <tr><td>9</td></tr>
+        <tr><td>10</td></tr>        
+        </table>
+        <p id="mostrar">Paragrafo1</p>
+        <p>Paragrafo2</p>
+        <p>Paragrafo3</p>
+        <p>Paragrafo4</p>
+    <script type="text/javascript">
+        $("p").hide();       
+        $("h1").addClass("Black");
+        $("h1").css({"background-color":"black","color":"white"});
+        $("#top").css({"background-color":"red","color":"white"});
+        $("td").css({"text-align": "center","padding": "5px"});
+        $("#tabla2 tr:nth-child(even)").addClass("par");
+        $("#tabla2 tr:nth-child(odd)").addClass("impar");
+        $("mostrar").show(); 
+    </script>
+</body>
+</html>
+<link rel="stylesheet" href="jquery1.css">

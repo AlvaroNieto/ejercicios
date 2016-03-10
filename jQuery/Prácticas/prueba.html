@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-1.11.3.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td id="centro">X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+    </table>
+    <script>
+    
+    //$("a").attr("href","http://www.elmundo.com")
+    //$("a:first").attr("id","primero");
+    //$("a:first").attr("href","http://www.elmundo.com");
+    </script>
+</body>
+</html>
+
+
+$("tr:nth-child(3)");--> $("tr:nth-child(3) tr:nth-child(3)");  seleccionar la X del centro. Columna 3, td 3.
+
+
+$("tr:nth-child(3) td:nth-child(3)").parent().prevAll().css({"background-color": "red", "color": "white"});
+$("tr:nth-child(3) td:nth-child(3)").parent().nextAll().css({"background-color": "grey", "color": "black"});
+$("tr:nth-child(3) td:nth-child(3)").nextAll().css({"background-color": "yellow", "color": "blue"});
+$("tr:nth-child(3) td:nth-child(3)").prevAll().css({"background-color": "blue", "color": "yellow"});
+

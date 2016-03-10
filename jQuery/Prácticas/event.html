@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <p id="1">Hola</p>
+    <div>Mouse</div>
+    <script src="jquery-1.11.3.js"></script>
+    <script>
+        $(function() {
+            $( document ).on( "mousemove", function( event ) {
+            $( "div" ).text( "pageX: " + event.pageX + ", pageY: " + event.pageY );
+            });
+    $("#1").css({"background-color":"red","color":"blue"}).width(500).height(500);
+    $("#1").click(function(event) {
+        
+        $(this).css({"background-color":"blue","color":"yellow"}).height(300).width(600);
+    });
+        });
+    </script>
+</body>
+</html>

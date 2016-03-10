@@ -1,0 +1,33 @@
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+}
+
+
+#container {
+  margin: 0px auto;
+  width: 710px;
+  height: 64px;
+  background-color: grey;
+  border-radius: 15px;
+}
+
+
+
+li {
+  display: inline;
+  background-color: cyan;
+  width: 150px;
+  float: left;
+  margin-left: 10px;
+  border:2px solid black;
+  border-radius:25px;
+  padding:5px;
+}
+
+p {
+  text-align: center;
+}

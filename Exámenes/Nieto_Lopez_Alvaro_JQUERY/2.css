@@ -1,0 +1,53 @@
+#container {
+  margin: 0 auto;
+  width: 750px;
+  height: 400px;
+}
+#barras {
+  width: 400px;
+  height: 100px;
+  margin: 0px;
+  float: left;
+}
+
+#porcentaje {
+  width: 300px;
+  float: left;
+  margin-left: 50px;
+  height: 100px;
+}
+h3 {
+  margin-left: 100px;
+}
+#botones {
+  float: left;
+  margin-left: 225px;
+  margin-top: 20px;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+}
+
+.rojo {
+  background-color: red;
+  height: 100px;
+  width: 30px;
+  float: left;
+  margin-left: 10px;
+}
+.amarillo {
+  background-color: yellow;
+  height: 100px;
+  width: 30px;
+  float: left;
+  margin-left: 10px;
+}
+.verde {
+  background-color: green;
+  height: 100px;
+  width: 30px;
+  float: left;
+  margin-left: 10px;
+}

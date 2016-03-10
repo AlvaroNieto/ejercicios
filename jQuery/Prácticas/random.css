@@ -1,0 +1,19 @@
+#container {
+  margin: 50px auto;
+  width: 300px;
+}
+button {
+  float: right;
+}
+input {
+  float: left;
+}
+#frases {
+  width: 300px;
+  margin: 0 auto;
+}
+img {
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 50px;
+}

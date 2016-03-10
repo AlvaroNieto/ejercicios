@@ -1,0 +1,192 @@
+#plano3 {
+  position: relative;
+  float: right;
+  top: -5px;
+  left: -130px;
+  width: 45%;
+  margin-right: 20px;
+}
+#plano2 {
+  position: relative;
+  float: right;
+  top: -76px;
+  width: 45%;
+  margin-right: 20px;
+}
+#plano {
+  position: relative;
+  float: right;
+  top: -335px;
+  width: 40%;
+  margin-right: 20px;
+}
+#lista1 {
+  margin-top: 30px;
+}
+li {
+  margin-bottom: 10px;
+  margin-right: 40px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212121;
+}
+img {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 0px solid;
+  border-radius: 8px;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c9c9c9;
+}
+div {
+  float: left;
+  border: 1px groove #00A0B6;
+  border-radius: 8px;
+}
+.arrow {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 7px;
+  border-top: 3px solid #494949;
+  border-right: 3px solid #494949;
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 510px;
+}
+.arrow-left {
+  -ms-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  left: -35px;
+}
+#menushow > p {
+  white-space: pre-line;
+}
+#container {
+  position: relative;
+  left: 48%;
+  margin-left: -450px;
+  width: 910px;
+  background-color: cyan;
+  height: 500px;
+  margin-top: 50px;
+  z-index: -1;
+  background-image: url("fondo.png");
+  background-size: cover;
+  border: 0px groove blue;
+}
+#container > div {
+  background-color: red;
+  margin-left: 20px;
+  width: 50px;
+  height: 370px;
+  margin-top: 15px;
+}
+#container div div {
+  height: 100%;
+  width: 100%;
+}
+#container div .hidden {
+  display: none;
+}
+#container div .open {
+  display: table-row;
+}
+div #menu1 {
+  width: 580px;
+  background-image: url("BLUR-1.jpg");
+  background-size: cover;
+}
+div #menu2 {
+  background-image: url("BLUR-2.jpg");
+  background-size: cover;
+}
+div #menu3 {
+  background-image: url("BLUR-3.jpg");
+  background-size: cover;
+}
+div #menu4 {
+  background-image: url("BLUR-4.jpg");
+  background-size: cover;
+}
+div #menu5 {
+  background-image: url("BLUR-5.jpg");
+  background-size: cover;
+}
+.showhidden {
+  display: none;
+}
+#container div #menushow {
+  height: 300;
+  margin-top: 0px;
+}
+#container #menu5 #container-galeria {
+  width: 580px;
+  height: 340px;
+  margin: 0px auto;
+}
+#galeria {
+  height: 300px;
+  width: 400px;
+}
+#imagen {
+  line-height: 450px;
+  vertical-align: middle;
+}
+#container div div div div #imagen #foto {
+  vertical-align: middle;
+  width: 75%;
+  margin-top: 10px;
+}
+div div div div div #botones {
+  width: 68px;
+  height: 20px;
+  margin-left: 250px;
+  margin-top: 4px;
+}
+#pie {
+  margin-top: 400px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: black;
+  text-align: justify;
+}
+div div div div div #botones > #adelante {
+  width: 25%;
+  float: left;
+}
+i {
+  float: left;
+  position: relative;
+  top: -270px;
+}
+#foto {
+  position: relative;
+  width: 100%;
+  top: -30px;
+}
+
+div div #menucontainer .saltos {
+  margin-left: 10px;
+  float: left;
+  position: relative;
+  top: -100px;
+  right: -130px;
+  background-color: none;
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+}

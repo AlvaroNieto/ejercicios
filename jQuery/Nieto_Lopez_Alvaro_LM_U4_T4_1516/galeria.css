@@ -1,0 +1,27 @@
+#container {
+  width: 800px;
+  margin: 50px auto;
+}
+
+#galeria {
+  height: 500px;
+  width: 802px;
+  background-color: grey;
+}
+
+#imagen  {
+  border: 1px solid;
+  line-height: 470px;
+  vertical-align: middle;
+}
+
+#foto {
+
+  vertical-align: middle;
+}
+
+
+#botones {
+  width: 68px;
+  margin: 4px auto;
+}

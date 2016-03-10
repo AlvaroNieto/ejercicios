@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-1.11.3.js"></script>
+  <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="numeros">
+      <div id="primero">
+        X
+        <input type="text" id="x" value="2" />
+      </div>
+      <div id="segundo">
+        Y
+        <input type="text" id="y" value="4" />
+      </div>
+    </div>
+    <div id="botones">
+      <button id="suma">SUMA</button>
+      <button id="resta">RESTA</button>
+      <button id="multi">MULTIPLICACIÓN</button>
+      <button id="division">DIVISIÓN</button>
+    </div>
+    <div id="calculo">
+      <h4>RESULTADO</h4>
+      <h4 id="calculadora">X + Y = 6</h4>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      var calc = 0
+
+      function valores() {
+        var x = parseInt($("#x").val());
+        var y = parseInt($("#y").val());
+      };
+      $("#suma").click(function() {
+        var x = parseInt($("#x").val());
+        var y = parseInt($("#y").val());
+        cal = x + y
+        $("#calculadora").text("X + Y = " + cal);
+      });
+      $("#resta").click(function(event) {
+        var x = parseInt($("#x").val());
+        var y = parseInt($("#y").val());
+        cal = x - y
+        $("#calculadora").text("X - Y = " + cal);
+      });
+      $("#multi").click(function(event) {
+        var x = parseInt($("#x").val());
+        var y = parseInt($("#y").val());
+        cal = x * y
+        $("#calculadora").text("X · Y = " + cal);
+      });
+      $("#division").click(function(event) {
+        var x = parseInt($("#x").val());
+        var y = parseInt($("#y").val());
+        cal = x / y
+        $("#calculadora").text("X : Y = " + cal);
+      });
+
+    });
+  </script>
+</body>
+
+</html>

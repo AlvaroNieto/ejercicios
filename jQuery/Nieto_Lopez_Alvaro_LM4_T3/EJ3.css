@@ -1,0 +1,39 @@
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+}
+
+
+#container {
+  margin: 0px auto;
+  width: 425px;
+  height: 64px;
+  background-color: grey;
+}
+
+#menu > li {
+  display: inline;
+  background-color: red;
+  width: 80px;
+  float: left;
+  margin-left: 10px;
+  border:2px solid black;
+  padding:5px;
+}
+
+li {
+  display: inline;
+  background-color: orange;
+  width: 80px;
+  float: left;
+  margin-left: 85px;
+  border:2px solid black;
+  padding:5px;
+}
+
+p {
+  text-align: center;
+}

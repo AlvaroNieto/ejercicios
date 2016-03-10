@@ -1,0 +1,42 @@
+#container {
+margin: 0 auto;
+}
+#numeros {
+  width: 300px;
+  float:left;
+  height: 200px;
+}
+
+#primero {
+  width: 200px;
+  margin-bottom: 10px;
+  height: 25px;
+  margin-top: 30px;
+  float: right;
+}
+#segundo {
+  width: 200px;
+  margin-bottom: 10px;
+  height: 25px;
+  float: right;
+}
+#botones {
+  width: 300px;
+  float:left;
+  height: 200px;
+}
+button {
+  width: 280px;
+  margin: 0 auto;
+}
+#calculo {
+  width: 300px;
+  float:left;
+  border: 1px solid black;
+  height: 100px;
+  margin-top: 15px;
+}
+
+button {
+  margin-top: 15px;
+}

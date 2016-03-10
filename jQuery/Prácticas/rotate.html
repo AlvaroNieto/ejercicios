@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-1.11.3.js"></script>
+  <script src="jQueryRotate.js"></script>
+  <link rel="stylesheet" href="rotate.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="div1"></div>
+    <section id="section1">
+    Rotar:
+    <br>
+    <input type="range" min="0" max="1080" value="0" id="input" />
+    <br> transform: rotate(<span id="span1">0</span>º)
+    <br />
+  </section>
+  <section>
+    <h4>RGB</h4>
+    <br />
+    <p class="color">
+      R
+    </p>
+    <input type="range" min="0" max="255" value="0" class="RGB" id="input1" />
+    <p class="color">
+      G
+    </p>
+    <input type="range" min="0" max="255" value="0" class="RGB" id="input2" />
+    <p class="color">
+      B
+    </p>
+    <input type="range" min="0" max="255" value="0" class="RGB" id="input3" />
+  </section>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $(function() {
+        $("#input").on("input",function() {
+          var rotationrange = $("#input").val();
+          var angle = parseInt(rotationrange, 10);
+          $("#div1").css({
+            "transform": "rotate("+angle+"deg)"
+          });
+          $("#span1").text(angle);
+        });
+
+        function color() {
+          var r = $("#input1").val();
+          var g = $("#input2").val();
+          var b = $("#input3").val();
+          $("#div1").css("background-color", "rgb(" + r + "," + g + "," + b + ")")
+        };
+        $(".RGB").on("input", color);
+      })
+    });
+  </script>
+</body>
+
+</html>

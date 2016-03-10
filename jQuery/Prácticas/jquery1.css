@@ -1,0 +1,12 @@
+.par {
+background-color: grey;
+color: white;
+}
+      
+.impar {
+    background-color: cyan;
+} 
+
+#tabla2 {
+    margin-top: 50px;
+}

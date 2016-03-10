@@ -1,0 +1,16 @@
+#container {
+  margin: 40px auto;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  border: 3px solid grey;
+}
+
+#bloque {
+  right: 250px;
+  bottom: 250px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: black;
+}

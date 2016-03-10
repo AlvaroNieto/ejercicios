@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-1.11.3.js"></script>
+  <link rel="stylesheet" href="key.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="bloque">
+    </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $("body").keydown(function(event) {
+        if (event.which == 40) {
+          if ($("#bloque").css("bottom") == "0px") {
+            alert("MUERTO");
+            $("#bloque").css("bottom", "250px");
+          } else {
+            $("#bloque").animate({
+              bottom: "-=50px"
+            }, 1000);
+          }
+        } else if (event.which == 38) {
+          if ($("#bloque").css("bottom") == "500px") {
+            alert("MUERTO");
+            $("#bloque").css("bottom", "250px");
+          } else {
+            $("#bloque").animate({
+              bottom: "+=50px"
+            }, 1000);
+          }
+        } else if (event.which == 39) {
+          if ($("#bloque").css("right") == "0px") {
+            alert("MUERTO");
+            $("#bloque").css("right", "250px");
+          } else {
+            $("#bloque").animate({
+              right: "-=50px"
+            }, 1000);
+          }
+        } else if (event.which == 37) {
+          if ($("#bloque").css("right") == "500px") {
+            alert("MUERTO");
+            $("#bloque").css("right", "250px");
+          } else {
+            $("#bloque").animate({
+              right: "+=50px"
+            }, 1000);
+          }
+        };
+      });
+    });
+  </script>
+</body>
+
+</html>

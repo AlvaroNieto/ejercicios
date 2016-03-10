@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-1.11.3.js"></script>
+    <title>Jquery</title>
+</head>
+
+<body>
+    <p id="myfirstp">
+        Hello world!
+    </p>
+    <p>
+        Hello again
+    </p>
+    <script type="text/javascript">
+        var myLogs = [];
+        $(function() {
+            console.log("using jQuery-1.11.3.js");
+            //alert("muahhahahhhaha");
+            console.log($("p#myfirstp").width());
+            console.log($("p#myfirstp").height());
+            
+            $("p").show();
+            
+            $("p").css("background-color","red")
+            $("p#myfirstp").css({"background-color":"blue","color":"white"});
+            
+            var myLogs = [];
+                (function () {
+                    var log = console.log;
+                    console.log = function () {
+                        var args = Array.prototype.slice.call(arguments)
+                        log.apply(this, args );
+                        myLogs.push(args);
+                    };
+                    function("/home/alvaro/Escritorio/Ejercicios/log","myLogs") {
+					return this.getDriver().saveFile("/home/alvaro/Escritorio/Ejercicios/log","myLogs");
+                    },
+            }());
+        });
+    </script>
+</body>
+</html>
+<link rel="stylesheet" href="">

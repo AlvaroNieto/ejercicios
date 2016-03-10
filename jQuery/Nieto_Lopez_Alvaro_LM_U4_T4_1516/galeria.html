@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-1.11.3.js"></script>
+  <link rel="stylesheet" href="galeria.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="galeria">
+      <div id="imagen">
+        <img src="foto1.jpg" id="foto">
+      </div>
+      <div id="botones">
+        <button id="adelante" class="boton"><<</button>
+        <button id="atras" class="boton">>></button>
+      </div>
+    </div>
+  </div>
+  <script>
+  $(document).ready(function() {
+      var imagen = new Array(3)
+      imagen[1]="foto1.jpg"
+      imagen[2]="foto2.jpg"
+      imagen[3]="foto3.jpg"
+      imagen[4]="foto4.jpg"
+      var num = 1;
+      $("#adelante").click(function() {
+        num=num+1
+        if (num==5)
+        {num=1}
+        $("#foto").fadeTo("slow",0);
+        $("#foto").delay(250)
+        .queue(function(next) { $(this).attr("src",imagen[num]); next(); });
+        $("#foto").fadeTo("slow",1);
+      });
+
+      $("#atras").click(function() {
+        num=num-1
+        if (num==0)
+        {num=4}
+        $("#foto").fadeTo("slow",0);
+        $("#foto").delay(250)
+         .queue(function(next) { $(this).attr("src",imagen[num]); next(); });
+        $("#foto").fadeTo("slow",1);
+      });
+    });
+  </script>
+</body>
+
+</html>

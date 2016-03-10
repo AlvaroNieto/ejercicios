@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-1.11.3.js"></script>
+  <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="titulo">
+      <h2>BARRA DE PROGRESO</h2>
+    </div>
+    <div id="barras">
+      <div id="uno" class="rojo"></div>
+      <div class="rojo"></div>
+      <div class="rojo"></div>
+      <div class="rojo"></div>
+      <div id="dos" class="amarillo"></div>
+      <div class="amarillo"></div>
+      <div class="amarillo"></div>
+      <div id="tres" class="verde"></div>
+    </div>
+    <div id="porcentaje">
+      <h3>80%</h3>
+    </div>
+    <div id="botones">
+      <button id="mas">+</button>
+      <button id="menos">-</button>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+
+      num = parseInt(80)
+      divuno = $("#uno")
+      divdos = $("#dos")
+      divtres = $("#tres")
+
+      $("#mas").click(function(event) {
+        if (num < 100) {
+          num = num + 10
+          $("h3").text(num + "%")
+          if (num <= 40) {
+            divuno.clone().appendTo("#barras");
+          } else if (num > 40 && num <= 70) {
+            divdos.clone().appendTo("#barras");
+          } else if (num > 70) {
+            divtres.clone().appendTo("#barras");
+          }
+        }
+      });
+
+      $("#menos").click(function(event) {
+        if (num > 0) {
+          $("#barras > div").last().remove();
+          num = num - 10
+          $("h3").text(num + "%")
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

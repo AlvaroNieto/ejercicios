@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="jquery1.css"/>
+    <title>jquery1</title>
+  </head>
+  <body>
+    <h1>Titulo</h1>
+    <table border="1">
+      <tr>
+        <td></td>
+        <td>Lunes</td>
+        <td>Martes</td>
+        <td>Miercoles</td>
+        <td>Jueves</td>
+        <td>Viernes</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>8:15<br>-<br>9:15</td>
+        <td rowspan="3">Base de<br>datos</td>
+        <td rowspan="2">Lenguaje<br>de Marcas</td>
+        <td rowspan="3">Implantación <br>de Sistemas<br>Operativos</td>
+        <td rowspan="2">Lenguaje<br>de Marcas</td>
+        <td rowspan="2">Implantación <br>de Sistemas<br>Operativos</td>
+        <td>8:15<br>-<br>9:15</td>
+      </tr>
+      <tr>
+        <td>9:15<br>-<br>10:15</td>
+        <td>9:15<br>-<br>10:15</td>
+
+
+      </tr>
+      <tr>
+        <td>10:15<br>-<br>11:15</td>
+        <td rowspan="2">Libre</td>
+        <td rowspan="2">Libre</td>
+        <td>Fundamentos<br>de Hardware</td>
+        <td>10:15<br>-<br>11:15</td>
+
+      </tr>
+      <tr>
+        <td>11:15<br>-<br>11:45</td>
+        <td>Libre</td>
+        <td>Libre</td>
+        <td>Libre</td>
+        <td>11:15<br>-<br>11:45</td>
+
+      </tr>
+      <tr>
+        <td>11:45<br>-<br>12:45</td>
+        <td rowspan="3">Planificiación<br>de Redes</td>
+        <td rowspan="3">Implantación <br>de Sistemas<br>Operativos</td>
+        <td rowspan="3">Base de<br>datos</td>
+        <td rowspan="3">Planificiación<br>de Redes</td>
+        <td rowspan="2">Fundamentos<br>de Hardware</td>
+        <td>11:45<br>-<br>12:45</td>
+
+      </tr>
+      <tr>
+        <td>12:45<br>-<br>13:45</td>
+        <td>12:45<br>-<br>13:45</td>
+
+      </tr>
+      <tr>
+        <td>13:45<br>-<br>14:45</td>
+        <td>Libre</td>
+        <td>13:45<br>-<br>14:45</td>
+      </tr>
+    </table>
+    <table border="1" id="tabla2">
+      <tr>
+        <td>
+          1
+        </td>
+      </tr><tr>
+        <td>
+          2
+        </td>
+      </tr><tr>
+        <td>
+          3
+        </td>
+      </tr><tr>
+        <td>
+          4
+        </td>
+      </tr><tr>
+        <td>
+          5
+        </td>
+      </tr><tr>
+        <td>
+          6
+        </td>
+      </tr><tr>
+        <td>
+          7
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+      </tr><tr>
+        <td>
+          9
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+      </tr>
+    </table>
+    <p>Paragrafo 1</p>
+    <p>Paragrafo 2</p>
+    <p>Paragrafo 3</p>
+    <p>Paragrafo 4</p>
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+    $( "h1" ).addClass( "black" );
+    $( "tr:first" ).css({"background-color":"red","color":"white"});
+    $( "#tabla2 tr:nth-child(even)" ).css({"background-color":"grey","color":"white"});
+    $( "#tabla2 tr:nth-child(odd)" ).css({"background-color":"yellow"});
+    $( "p" ).hide();
+    $( "p:first" ).show();
+
+    </script>
+  </body>
+</html>

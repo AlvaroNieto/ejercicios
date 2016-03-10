@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-1.11.3.js"></script>
+  <link rel="stylesheet" href="EJ2.css">
+</head>
+
+<body>
+  <div id="centrar">
+    <div id="menu">
+      <input type="text" id="input" />
+      <button id="fill">Fill</button>
+      <button id="add">Add</button>
+      <button id="delete">Delete</button>
+
+    </div>
+    <table border="1">
+      <tr id="tr">
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    $(document).ready(function() {
+
+      var trOriginal = $("#tr");
+      $("#fill").click(function() {
+        var value = $("#input").val();
+        $("td").text(value);
+        trOriginal = $("#tr");
+      });
+
+      $("#add").click(function() {
+        trOriginal.clone().appendTo("table");
+      });
+
+      $("#delete").click(function() {
+        $("tr").last().remove()
+      });
+
+    });
+  </script>
+</body>
+
+</html>
