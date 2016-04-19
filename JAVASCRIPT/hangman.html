@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="hangman.css">
+  <script type="text/javascript">
+    var imagen = new Array(9)
+    imagen[1] = "h0.png"
+    imagen[2] = "h1.png"
+    imagen[3] = "h2.png"
+    imagen[4] = "h3.png"
+    imagen[5] = "h4.png"
+    imagen[6] = "h5.png"
+    imagen[7] = "h6.png"
+    imagen[8] = "h7.png"
+    imagen[9] = "h8.png"
+    var palabras = new Array(9)
+    palabras[1] = "gimnasia"
+    palabras[2] = "palabras"
+    palabras[3] = "acertijo"
+    palabras[4] = "parrilla"
+    palabras[5] = "especular"
+    palabras[6] = "transportador"
+    palabras[7] = "falsificar"
+    palabras[8] = "sostener"
+    palabras[9] = "relampaguear"
+    var res = '';
+    var caracter = '';
+    var i = 0;
+    var random = Math.floor((Math.random() * 9) + 1);
+    setTimeout(function() {
+      word()
+    }, 50);
+    //document.getElementById("procesa").addEventListener("click", check, false);
+    //document.getElementById ("nuevo").addEventListener ("click", reset, false);
+    function word() {
+      res = palabras[random].split("");
+      for (i = 0; i < res.length; i++) {
+        document.getElementById('palabra').innerHTML += "<span id=parte" + i + ">_ </span>";
+      }
+
+
+    };
+    var res2 = '';
+    var fired = 0;
+    function check() {
+      i = 0;
+      caracter = document.getElementById('letra').value;
+      while (res[i]) {
+        if (res[i] == document.getElementById('letra').value) {
+          caracter = document.getElementById('letra').value;
+          document.getElementById('parte' + i).innerHTML = caracter + " "
+          caracter = "";
+          fired = 1;
+          i++;
+        } else {
+          i++;
+          if (fired == 0) {
+            document.getElementById('letras').innerHTML += '<span>' + caracter + '</span>'
+            fired = 1;
+        }
+      }
+    }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="top">
+      <div id="images">
+        <img id="imagen" src="h0.png" />
+      </div>
+      <div id="letras">
+      </div>
+    </div>
+    <div id="visor">
+      <div id="palabra">
+      </div>
+      <span id="txt">Visor letra -></span>
+      <input type="text" id="letra" maxlength="1" />
+      <button id="procesa" onclick="check()">Procesa</button>
+      <button id="nuevo">Juego Nuevo</button>
+    </div>
+  </div>
+</body>
+
+</html>

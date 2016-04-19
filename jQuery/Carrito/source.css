@@ -1,0 +1,54 @@
+
+#lista-p {
+  width: 265px;
+  float: left;
+  height: 400px;
+  border: 1px solid black;
+  overflow-y: auto
+}
+#lista-carrito {
+width: 265px;
+float: right;
+border: 1px solid black;
+height: 400px;
+overflow-y: auto
+}
+#container {
+  width: 700px;
+  margin: 70px auto;
+}
+.producto {
+  width: 250px;
+  height: 95px;
+  margin-bottom: 10px;
+  background-color: orange;
+}
+.producto img {
+  margin: 5px;
+}
+p {
+  padding: 0px;
+  margin: 0px;
+}
+h2 {
+  font-size: 130%;
+  padding: 5px;
+  margin-bottom: : 20px;
+}
+#cantidad {
+  float: right;
+  position: relative;
+  top: 33px;
+  margin-right: 10px;
+}
+#precio {
+  float: right;
+  margin-right: 50px;
+}
+
+.producto first {
+  margin-top: 50px;
+}
+#listas {
+  height: 405px;
+}

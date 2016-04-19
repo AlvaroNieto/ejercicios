@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple AJAX Example with jQuery - SOURCE</title>
+  <script src="js/jquery-1.12.0.js"></script>
+  <script src="jquery-ui-1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.css">
+  <link rel="stylesheet" href="source.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="listas">
+      <div id="lista-p">
+        <h2>LISTA DE PRODUCTOS</h2>
+        <div class="producto" id="primero">
+          <img src="img/alienware.jpg" align="middle" width="100" />
+          <span id="desc">Primero</span>
+          <span>50€</span>
+          <span id="cantidad">
+
+      </span>
+        </div>
+        <div class="producto" id="segundo">
+          <img src="img/alienware.jpg" align="middle" width="100" />
+          <span id="desc">Segundo</span>
+          <span>
+        65€
+      </span>
+          <span id="cantidad">
+
+      </span>
+        </div>
+        <div class="producto" id="tercero">
+          <img src="img/alienware.jpg" align="middle" width="100" />
+          <span id="desc">Tercero</span>
+          <span>
+       90€
+     </span>
+          <span id="cantidad">
+
+     </span>
+        </div>
+        <div class="producto" id="cuarto">
+          <img src="img/alienware.jpg" align="middle" width="100" />
+          <span id="desc">Cuarto</span>
+          <span>
+       288€
+     </span>
+          <span id="cantidad">
+
+     </span>
+        </div>
+
+      </div>
+      <div id="lista-carrito">
+        <h2>LISTA DE PRODUCTOS</h2>
+      </div>
+
+    </div>
+
+    <div id="precio">
+      <img id="carrito" src="img/cart.png" align="middle" width="100" />
+      <span id="elementos">0€</span>
+    </div>
+  </div>
+  <script>
+    $(function() {
+      var copy
+      var precio
+      var name
+      var amount = 0
+      $(".producto").draggable({
+        start: function() {
+          copy = $(this).clone();
+          precio = parseInt($(this).children("span").next().text().replace('€', ''));
+          name = $(this).attr('id');
+        },
+        appendTo: "body",
+        helper: "clone"
+      });
+      $("#lista-carrito").droppable({
+        drop: function() {
+          $.ajax({
+              url: "destination.html",
+              dataType: "text",
+            })
+            .done(function(data) {
+              data = $.trim(data);
+              if (data == "OK") {
+                var current = parseInt($("#elementos").text());
+                $("#elementos").text(current + precio + "€");
+                if ($("#lista-carrito").children("#" + name).length == 0) {
+                  copy.appendTo("#lista-carrito");
+                  $("#lista-carrito").children("#" + name).children("#cantidad").text(1);
+                } else {
+                  amount = parseInt($("#lista-carrito").children("#" + name).children("#cantidad").text());
+                  $("#lista-carrito").children("#" + name).children("#cantidad").text(amount + 1);
+                  amount = parseInt($("#lista-carrito").children("#" + name).children("#cantidad").text());
+                  $("#lista-carrito").children("#" + name).children("span").next("span").text(precio * amount + "€");
+                  $("#lista-carrito").children("#" + name).children("#cantidad").text(amount);
+                }
+              } else {
+                alert("Can't add the element to the Shopping Cart");
+              }
+            });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
